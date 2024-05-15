@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('productInput').value = '';
             document.getElementById('quantityInput').value = '';
         } else {
-            alert('Please enter both product and quantity.');
+            alert('Please  both product and quantity.');
         }
     });
 });
