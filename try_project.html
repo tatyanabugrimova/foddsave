@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage App</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Kavoon">
+    <script src="https://kit.fontawesome.com/9ee7886036.js" crossorigin="anonymous"></script>
+    <title>FoodWasteSolution</title>
+</head>
+
+<body>
+    <header class="header">
+        <i id="menuIcon" class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+        <h1 class="logo center">think.buy.eat.</h1>
+        <i id="userIcon" class="fa-solid fa-user fa-2xl" style="color: #ffffff;"></i>
+    </header>
+    <div>
+        <h2>Hello <span class="nameTag"></span></h2>
+        <h1 class="h1">Create a Shopping list:</h1>
+    </div>
+    <div>
+      <div class="input-container"> 
+        <div class="input-icons">
+         <i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #000000;"></i>
+         <input id="productInput" placeholder="Write a product">
+        </div>
+         <input id="quantityInput" placeholder="Quantity">
+         <button id="addProduct" class="addProduct">Add</button>
+      </div> 
+        <div id="productList">     
+        </div> <!-- space for the products-->
+    </div>
+    <div class="icons-container">
+        <div class="icon-container">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>Add To Storage</span>
+        </div>
+        <div class="icon-container">
+            <i class="fa-regular fa-bookmark"></i>
+            <span>Save the List</span>
+        </div>
+        <div class="icon-container">
+            <i class="fa-solid fa-trash"></i>
+            <span>Delete Items</span>
+        </div>
+        <div class="icon-container">
+            <i class="fa-solid fa-share"></i>
+            <span>Share the List</span>
+        </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+
+</html>
