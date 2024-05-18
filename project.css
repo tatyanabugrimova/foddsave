@@ -140,6 +140,19 @@ label {
     font-family: Montserrat, sans-serif;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+    margin: 30px;
+}
+
+.flex-item {
+    align-content: flex-end;
+}
+
 .submitButton {
     color: black;
     background-color: #F4C64E;
@@ -152,7 +165,7 @@ label {
     border: none;
     font-family: Montserrat, sans-serif;
     position: relative;
-    right: 0px;
+    float:right;
 }
 
 .inputFields {
@@ -162,9 +175,9 @@ label {
 }
 
 .noAccount {   
-    text-align: center;
-    margin: auto;
-    display: flow;
+    display: inline-block; 
+    text-align: center; 
+    width: 100%
 }
 
 .signUp {
