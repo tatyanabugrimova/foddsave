@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage App</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Kavoon">
+    <script src="https://kit.fontawesome.com/9ee7886036.js" crossorigin="anonymous"></script>
+    <title>FoodWasteSolution</title>
+</head>
+<body>
+  <div>
+    <header class="header">
+        <i id="menuIcon" class="fa-solid fa-bars fa-2xl" style="color: black;"></i>
+        <img src="images/logo+text.png" alt="Logo"/>
+        <i id="userIcon" class="fa-solid fa-user fa-2xl" style="color: black;"></i>
+    </header>
+  </div>  
+  <div class="bodyShoppingList"> 
+    <div>
+        <img src="images/arrow.png" alt="Arrow"/>
+        <h2>Hello <span class="nameTag"></span></h2>
+        <!--<h1 class="h1">Create a Shopping list:</h1>-->
+    </div>
+    <div>
+      <div class="input-container"> 
+         <input id="shoppingListName" placeholder="Shopping List Name... ">
+      <div class="defineProduct">
+         <div class="input-icons">
+         <input id="productInput" placeholder="Write a product">
+        </div>
+         <input id="quantityInput" placeholder="Quantity">
+         <button id="addProduct" >Add</button>
+      </div>   
+      </div> 
+        <div id="productList">     
+        </div> <!-- space for the products-->
+    </div>
+    <div class="icons-container">
+        <div class="icon-container">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>Add To Storage</span>
+        </div>
+        <div class="icon-container">
+            <i class="fa-regular fa-bookmark"></i>
+            <span>Save the List</span>
+        </div>
+        <div class="icon-container">
+            <i class="fa-solid fa-trash"></i>
+            <span>Delete Items</span>
+        </div>
+        <div class="icon-container">
+            <i class="fa-solid fa-share"></i>
+            <span>Share the List</span>
+        </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-column">
+        <img src="images/logo+text.png" alt="Logo"/>
+    </div>
+    <div class="footer-column">
+        <p>About Us</p>
+        <p>Career</p>
+        <p>Blog</p>
+        <p>Contact Us</p>
+    </div>
+    <div class="footer-column">
+        <p>Follow Us in Social</p>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: black;"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: black;"></i>
+        <i class="fa-brands fa-linkedin fa-2xl" style="color: black;"></i>
+    </div>
+  </footer>
+  <script src="project.js"></script>
+</body>
+</html>
+

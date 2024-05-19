@@ -1,0 +1,189 @@
+.bodyShoppingList {
+    background-color: white;
+    
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; 
+    background: #BFD8AF;
+    padding: 10px 20px;
+   
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row; 
+        background: #BFD8AF;
+        padding: 10px 20px;
+    }
+}
+
+.logo {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Kavoon, sans-serif;
+}
+
+body {
+    background-color: #F7F6F6;
+    ;
+}
+
+#shoppingListName {
+    display: block;
+    min-height: 2.5em;
+    width: 100%;
+}
+
+#icon {
+    size: 50px;
+    color: white;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+ 
+}
+
+.icons-container {
+    display: flex;
+    justify-content: flex-start; /* Change to flex-start */
+    margin-top: 10px;
+}
+
+.icon-container {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.icon-container i {
+    font-size: 24px;
+}
+
+.icon-container span {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* chatGPT */ 
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-icons {
+    position: relative;
+}
+
+.input-icons i {
+    position: absolute;
+    left: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#productInput {
+    padding-left: 30px; /* Ensure space for the icon */
+    width: 200px; /* Adjust as needed */
+}
+
+#quantityInput {
+    width: 100px; /* Adjust as needed */
+}
+
+#addProduct {
+    margin-left: 10px; /* Add space between inputs */
+}
+/* chatGPT */
+
+/* sign in page */
+
+
+#bodySignUp {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #99BC85;
+    font-family: Montserrat, sans-serif;
+}
+
+label {
+    margin: 0.5rem 0;
+    font-family: Montserrat, sans-serif;
+  }
+
+.inputSignIn {
+    display: block;
+    margin: 20px 0;
+    width: -webkit-fill-available;
+    min-height: 2.5em;
+    font-family: Montserrat, sans-serif;
+    border-radius: 3px;
+    border: 0;
+    padding: 0 10px;
+}
+
+.signInText {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+    margin: 30px;
+}
+
+.flex-item {
+    align-content: flex-end;
+}
+
+.submitButton {
+    color: black;
+    background-color: #F4C64E;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    display: flow;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    float:right;
+}
+
+.inputFields {
+    width: 75%;
+    position: relative;
+    margin: auto;
+}
+
+.noAccount {   
+    display: inline-block; 
+    text-align: center; 
+    width: 100%
+}
+
+.signUp {
+    text-decoration: underline;
+}
+
+img {
+    padding: 15px;
+}
