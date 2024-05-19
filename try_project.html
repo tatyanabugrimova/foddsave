@@ -9,27 +9,30 @@
     <title>FoodWasteSolution</title>
 </head>
 
-<body class="bodyShoppingList">
+<body>
+  <div>
     <header class="header">
         <i id="menuIcon" class="fa-solid fa-bars fa-2xl" style="color: black;"></i>
         <img src="images/logo+text.png"/>
         <i id="userIcon" class="fa-solid fa-user fa-2xl" style="color: black;"></i>
-  </header>
+    </header>
+  </div>  
+  <div class="bodyShoppingList"> 
     <div>
         <img src="images/arrow.png"/>
         <h2>Hello <span class="nameTag"></span></h2>
         <!--<h1 class="h1">Create a Shopping list:</h1>-->
-    
     </div>
     <div>
       <div class="input-container"> 
          <input id="shoppingListName" placeholder="Shopping List Name... ">
-        <div class="input-icons">
-         <i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #000000;"></i>
+      <div class="defineProduct">
+         <div class="input-icons">
          <input id="productInput" placeholder="Write a product">
         </div>
          <input id="quantityInput" placeholder="Quantity">
-         <button id="addProduct" class="addProduct">Add</button>
+         <button id="addProduct" >Add</button>
+      </div>   
       </div> 
         <div id="productList">     
         </div> <!-- space for the products-->
@@ -52,6 +55,7 @@
             <span>Share the List</span>
         </div>
     </div>
+  </div>
     <script src="project.js"></script>
 </body>
 

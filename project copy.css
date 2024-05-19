@@ -1,9 +1,6 @@
 .bodyShoppingList {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
+    
 }
 
 .header {
@@ -27,45 +24,28 @@
     }
 }
 
+.logo {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Kavoon, sans-serif;
+}
+
 body {
-    background-color: white;
+    background-color: #F7F6F6;
     ;
 }
 
-.input-container {
-    display: flex;
-    flex-direction: column; 
-}
-
-.input-container input {
-    flex-wrap: nowrap;
-    height: 30px;
-}
-
-.defineProduct {
-    display: flex;
-    flex-direction: row;
-}
-
-#addProduct {
-    align-items: flex-end;
-    height: 30px;
-    width: 30px;
-} 
-
 #shoppingListName {
-    display: flex;
-    min-height: 30px;
-    width: 320px;
+    display: block;
+    min-height: 2.5em;
+    width: 100%;
 }
 
-#productInput {
-    width: 58,64%;
-}
-
-#quantityInput {
-    width: 90px;
-
+#icon {
+    size: 50px;
+    color: white;
 }
 
 .btn {
@@ -91,11 +71,42 @@ body {
 }
 
 .icon-container span {
-    display: flex;
+    display: block;
     font-size: 14px;
     margin-top: 5px;
 }
 
+/* chatGPT */ 
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-icons {
+    position: relative;
+}
+
+.input-icons i {
+    position: absolute;
+    left: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#productInput {
+    padding-left: 30px; /* Ensure space for the icon */
+    width: 200px; /* Adjust as needed */
+}
+
+#quantityInput {
+    width: 100px; /* Adjust as needed */
+}
+
+#addProduct {
+    margin-left: 10px; /* Add space between inputs */
+}
+/* chatGPT */
 
 /* sign in page */
 
