@@ -1,24 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var addProductButton = document.getElementById('addProduct');
-    var productList = document.getElementById('productList');
+function onPageLoaded() {
+    // Get the add product button and the product list container
+    const addProductButton = document.getElementById('addProduct');
+    const productList = document.getElementById('productList');
 
+    // Add an event listener to the add product button
     addProductButton.addEventListener('click', function() {
-        var productInput = document.getElementById('productInput').value;
-        var quantityInput = document.getElementById('quantityInput').value;
+        // Get the values from the input fields
+        const productInput = document.getElementById('productInput').value;
+        const quantityInput = document.getElementById('quantityInput').value;
 
-        if (quantityInput.length > 10) {
-            alert('Quantity cannot exceed 10 characters.');
-            return;
-        }
-
+        // Check if both fields are not empty after trimming whitespace
         if (productInput.trim() !== '' && quantityInput.trim() !== '') {
-            var productItem = document.createElement('div');
+            // Create a new product item div
+            const productItem = document.createElement('div');
             productItem.className = 'productItem';
 
-            var checkbox = document.createElement('input');
+            // Create a checkbox input element
+            const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
+            // Add an event listener to toggle the completed class
             checkbox.addEventListener('change', function() {
-                // Toggle completed class
+                // Toggle the 'completed' class based on checkbox state
                 if (checkbox.checked) {
                     productItem.classList.add('completed');
                 } else {
@@ -26,21 +28,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            var label = document.createElement('label');
-            label.textContent = productInput + ' - ' + quantityInput;
+            // Create a label to display the product and quantity
+            const label = document.createElement('label');
+            label.textContent = `${productInput} - ${quantityInput}`;
 
+            // Append the checkbox and label to the product item
             productItem.appendChild(checkbox);
             productItem.appendChild(label);
+            // Append the product item to the product list
             productList.appendChild(productItem);
 
-            // Clear input fields after adding product
+            // Clear the input fields after adding the product
             document.getElementById('productInput').value = '';
             document.getElementById('quantityInput').value = '';
         } else {
+            // Alert the user if either field is empty
             alert('Please enter both product and quantity.');
         }
     });
-});
+}
+
+// Execute the onPageLoaded function when the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', onPageLoaded);
 
 const newName = document.getElementById("shoppingListName");
 const shoppingListTag = document.getElementById("shoppingListTag");
