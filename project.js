@@ -41,3 +41,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+const newName = document.getElementById("shoppingListName");
+const shoppingListTag = document.getElementById("shoppingListTag");
+const addListNameButton = document.getElementById("addListName");
+
+addListNameButton.addEventListener("click", function() {
+    // Set the text content of shoppingListTag to the value of newName
+    shoppingListTag.textContent = newName.value;
+    
+    // Remove the input field and the button
+    newName.remove();
+    addListNameButton.remove();
+});

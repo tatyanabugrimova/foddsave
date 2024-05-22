@@ -8,7 +8,7 @@ body, html {
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 70%;
     margin: auto;
     margin-bottom: 50px;
 }
@@ -22,16 +22,6 @@ body, html {
     padding: 10px 20px;
 }
 
-@media only screen and (max-width: 600px) {
-    .header {
-        display: flex; 
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row; 
-        background: #BFD8AF;
-        padding: 10px 20px;
-    }
-}
 
 body {
     background-color: white;
@@ -42,9 +32,19 @@ body {
     width: 49px;
 }
 
+#shoppingListTag {
+    font-size: 30px;
+    font-weight: 900;
+}
+
 .input-container {
     display: flex;
     flex-direction: column; 
+}
+
+.changeShoppingListName {
+    display: flex;
+    flex-direction: row;
 }
 
 .input-container input {
@@ -60,7 +60,12 @@ body {
     height: 30px;
     margin-left: auto; 
     flex-basis: fit-content;
+}
 
+.addListName {
+    height: 30px;
+    margin-left: auto; 
+    flex-basis: fit-content;
 }
 
 #shoppingListName {
@@ -191,8 +196,7 @@ label {
 .inputFields {
     width: 75%;
     position: relative;
-    margin: auto;
-    margin-bottom: 50px;
+    margin: 20px auto;
 }
 
 .noAccount {   
@@ -217,6 +221,7 @@ img {
     align-items: flex-start;
     padding: 20px;
     color: white;
+    margin-top: auto;
 }
 
 .footer-column {
