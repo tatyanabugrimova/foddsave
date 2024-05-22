@@ -103,24 +103,38 @@ body {
 }
 
 .icons-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 .icon-container {
-    margin: 0 10px;
+
     background-color:#FFF8E6;
     border: none;
     border-radius: 0 0 15px 15px;
     font-family: Montserrat, sans-serif;
     font-size: 13px;
-    padding: 20px 15px;
+   
 }
 
 .accountPage {
   background-color: #FFF8E6;
-  margin: 15px 22px;
+  
+}
+
+@media only screen and (max-width: 390px) {
+    .icon-container img {
+        width: 20px;
+    }
+    .icons-container {
+        margin: 0 20px;
+    }
 }
 
 .icon-container i {
