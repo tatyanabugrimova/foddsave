@@ -37,39 +37,42 @@ body {
     background-color: white;
 }
 
+.icon-arrow {
+    height: 49px;
+    width: 49px;
+}
+
 .input-container {
     display: flex;
     flex-direction: column; 
-    justify-content: space-between;
 }
 
 .input-container input {
-    flex-wrap: nowrap;
     height: 30px;
 }
 
 .defineProduct {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between; 
 }
 
 #addProduct {
     height: 30px;
-    margin-left: 3.68%; 
+    margin-left: auto; 
     flex-basis: fit-content;
-    align-items: flex-end;
+
 }
 
 #shoppingListName {
     display: flex;
     min-height: 30px;
     width: 87.8%;
+    margin-bottom: 16px;
 }
 
 #productInput {
-    width: 58.64%;
+   
+    margin-right: auto;
 }
 
 #quantityInput {
@@ -83,15 +86,36 @@ body {
     
 }
 
+#productList {
+  margin: 36px 0;
+}
+
+.productItem {
+    background-color: #DBE6D4;
+    margin: 5px 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .icons-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .icon-container {
-    text-align: center;
     margin: 0 10px;
+    background-color:#FFF8E6;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    padding: 20px 15px;
+}
+
+.accountPage {
+  background-color: #FFF8E6;
+  margin: 15px 22px;
 }
 
 .icon-container i {
@@ -100,15 +124,16 @@ body {
 
 .icon-container span {
     display: flex;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 5px;
+    justify-content: center;
 }
 
 #bodySignUp {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-color: #99BC85;
+    background-color: #DBE6D4;
     font-family: Montserrat, sans-serif;
     display: flex;
     flex-direction: column;
@@ -214,4 +239,28 @@ img {
 
 .footer p {
     color: black; 
+}
+
+/* Account page*/
+ 
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.profileName {
+    display: inline-block;
+    text-align: center;
+}
+
+.photoDiv {
+    align-self: center;
+    margin-top: 22px;
+}
+
+.photo {
+    max-height: 200px;
+    max-width: 200px;
 }

@@ -13,15 +13,33 @@
   <div>
     <header class="header">
         <i id="menuIcon" class="fa-solid fa-bars fa-2xl" style="color: black;"></i>
-        <img src="images/logo+text.png" alt="Logo"/>
+        <img src="images/logo+text.png" alt="Logo" class="img-logo"/>
         <i id="userIcon" class="fa-solid fa-user fa-2xl" style="color: black;"></i>
     </header>
   </div>  
   <div class="bodyShoppingList"> 
     <div>
-        <img src="images/arrow.png" alt="Arrow"/>
+        <img src="images/arrow.png" alt="Arrow" class="icon-arrow"/>
         <h2>Hello <span class="nameTag"></span></h2>
         <!--<h1 class="h1">Create a Shopping list:</h1>-->
+    </div>
+    <div class="icons-container">
+        <div class="icon-container">
+            <img src="images/checkStorage.png" alt="addProduct">
+            <span>Check Storage</span>
+        </div>
+        <div class="icon-container">
+            <img src="images/edit.png" alt="edit">
+            <span>Edit</span>
+        </div>
+        <div class="icon-container">
+            <img src="images/delete.png" alt="delete">
+            <span>Delete</span>
+        </div>
+        <div class="icon-container">
+            <img src="images/save.png" alt="save">
+            <span>Save</span>
+        </div>
     </div>
     <div>
       <div class="input-container"> 
@@ -31,29 +49,11 @@
          <input id="productInput" placeholder="Write a product">
         </div>
          <input id="quantityInput" placeholder="Quantity">
-         <button id="addProduct" >Add</button>
+         <button id="addProduct" class="push" >Add</button>
       </div>   
       </div> 
-        <div id="productList">     
+        <div id="productList">  
         </div> <!-- space for the products-->
-    </div>
-    <div class="icons-container">
-        <div class="icon-container">
-            <i class="fa-solid fa-cart-plus"></i>
-            <span>Add To Storage</span>
-        </div>
-        <div class="icon-container">
-            <i class="fa-regular fa-bookmark"></i>
-            <span>Save the List</span>
-        </div>
-        <div class="icon-container">
-            <i class="fa-solid fa-trash"></i>
-            <span>Delete Items</span>
-        </div>
-        <div class="icon-container">
-            <i class="fa-solid fa-share"></i>
-            <span>Share the List</span>
-        </div>
     </div>
   </div>
   <footer class="footer">
