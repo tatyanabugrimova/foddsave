@@ -1,0 +1,325 @@
+css
+
+.bodyShoppingList {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; 
+    background: #BFD8AF;
+    padding: 10px 20px;
+   
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row; 
+        background: #BFD8AF;
+        padding: 10px 20px;
+    }
+}
+
+body {
+    background-color: white;
+    ;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    
+}
+
+.input-container input {
+    flex-wrap: nowrap;
+    height: 30px;
+    
+}
+
+.defineProduct {
+    display: flex;
+    flex-direction: row;
+}
+
+#addProduct {
+    height: 30px;
+    width: 30px;
+    flex-basis: fit-content;
+    align-items: flex-end;
+} 
+
+#shoppingListName {
+    display: flex;
+    min-height: 30px;
+    width: 88%;
+    margin-bottom: 16px;
+}
+
+#productInput {
+    width: 59%;
+}
+
+#quantityInput {
+    width: 25%;
+    margin-left: 3.2%;
+
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+ 
+}
+
+.icons-container {
+    display: flex;
+    justify-content: flex-start; /* Change to flex-start */
+    margin-top: 10px;
+}
+
+.icon-container {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.icon-container i {
+    font-size: 24px;
+}
+
+.icon-container span {
+    display: flex;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* sign in page */
+
+
+#bodySignUp {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #99BC85;
+    font-family: Montserrat, sans-serif;
+}
+
+label {
+    margin: 0.5rem 0;
+    font-family: Montserrat, sans-serif;
+  }
+
+.inputSignIn {
+    display: block;
+    margin: 20px 0;
+    width: -webkit-fill-available;
+    min-height: 2.5em;
+    font-family: Montserrat, sans-serif;
+    border-radius: 3px;
+    border: 0;
+    padding: 0 10px;
+}
+
+.signInText {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+    margin: 30px;
+}
+
+.flex-item {
+    align-content: flex-end;
+}
+
+.submitButton {
+    color: black;
+    background-color: #F4C64E;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    display: flow;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    float:right;
+}
+
+.inputFields {
+    width: 75%;
+    position: relative;
+    margin: auto;
+}
+
+.noAccount {   
+    display: inline-block; 
+    text-align: center; 
+    width: 100%
+}
+
+.signUp {
+    text-decoration: underline;
+}
+
+img {
+    padding: 15px;
+}
+
+js. 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var addProductButton = document.getElementById('addProduct');
+    var productList = document.getElementById('productList');
+
+    addProductButton.addEventListener('click', function() {
+        var productInput = document.getElementById('productInput').value;
+        var quantityInput = document.getElementById('quantityInput').value;
+
+        if (productInput.trim() !== '' && quantityInput.trim() !== '') {
+            var productItem = document.createElement('div');
+            productItem.className = 'productItem';
+
+            var checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.addEventListener('change', function() {
+                // Toggle completed class
+                if (checkbox.checked) {
+                    productItem.classList.add('completed');
+                } else {
+                    productItem.classList.remove('completed');
+                }
+            });
+
+            var label = document.createElement('label');
+            label.textContent = productInput + ' - ' + quantityInput;
+
+            productItem.appendChild(checkbox);
+            productItem.appendChild(label);
+            productList.appendChild(productItem);
+
+            // Clear input fields after adding product
+            document.getElementById('productInput').value = '';
+            document.getElementById('quantityInput').value = '';
+        } else {
+            alert('Please enter both product and quantity.');
+        }
+    });
+});
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Kavoon">
+    <link rel="stylesheet" href="project.css">
+    <script src="https://kit.fontawesome.com/9ee7886036.js" crossorigin="anonymous"></script>
+    <title>FoodWasteSolution</title>
+ </head>
+
+ <body id="bodySignUp">
+      <header class="header">
+            <i id="menuIcon" class="fa-solid fa-bars fa-2xl" style="color: black;"></i>
+            <img src="images/logo+text.png"/>
+            <i id="userIcon" class="fa-solid fa-user fa-2xl" style="color: black;"></i>
+      </header>
+   <div class="inputFields">
+         <label><input placeholder="Name" class="inputSignIn" type="text"/></label>
+         <label><input placeholder="E-mail" required class="inputSignIn" type="email"></label>
+         <label><input placeholder="Password" required class="inputSignIn" type="password"></label>
+      <div>
+         <label class="rememberMeLabel"><input id="rememberMe" type="checkbox">Remember me</label>
+      </div> 
+      <div><button class="submitButton">Submit</button></div>
+      <div class="noAccount"><label>Don't have any account yet? <span class="signUp"> Sign Up</span></label></div>
+  </div>
+ </body>
+
+ <script src="project.js"></script>
+</html>
+
+html
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage App</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Kavoon">
+    <script src="https://kit.fontawesome.com/9ee7886036.js" crossorigin="anonymous"></script>
+    <title>FoodWasteSolution</title>
+</head>
+
+<body>
+  <div>
+    <header class="header">
+        <i id="menuIcon" class="fa-solid fa-bars fa-2xl" style="color: black;"></i>
+        <img src="images/logo+text.png"/>
+        <i id="userIcon" class="fa-solid fa-user fa-2xl" style="color: black;"></i>
+    </header>
+  </div>  
+  <div class="bodyShoppingList"> 
+    <div>
+        <img src="images/arrow.png"/>
+        <h2>Hello <span class="nameTag"></span></h2>
+        <!--<h1 class="h1">Create a Shopping list:</h1>-->
+    </div>
+    <div>
+      <div class="input-container"> 
+         <input id="shoppingListName" placeholder="Shopping List Name... ">
+      <div class="defineProduct">
+         <input id="productInput" placeholder="Write a product">
+         <input id="quantityInput" placeholder="Quantity">
+         <button id="addProduct" >Add</button>
+      </div>   
+      </div> 
+        <div id="productList">     
+        </div> <!-- space for the products-->
+    </div>
+    <div class="icons-container">
+        <div class="icon-container">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>Add To Storage</span>
+        </div>
+        <div class="icon-container">
+            <i class="fa-regular fa-bookmark"></i>
+            <span>Save the List</span>
+        </div>
+        <div class="icon-container">
+            <i class="fa-solid fa-trash"></i>
+            <span>Delete Items</span>
+        </div>
+        <div class="icon-container">
+            <i class="fa-solid fa-share"></i>
+            <span>Share the List</span>
+        </div>
+    </div>
+  </div>
+    <script src="project.js"></script>
+</body>
+
+</html>
