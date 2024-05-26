@@ -18,40 +18,38 @@
     </header>
   </div>  
   <div class="bodyShoppingList"> 
-    <div>
+    <div class="intro-SL">
         <img src="images/arrow.png" alt="Arrow" class="icon-arrow"/>
         <div id="shoppingListTag"></div>
         <!--<h1 class="h1">Create a Shopping list:</h1>-->
     </div>
-    <div class="icons-container">
-        <div class="icon-container">
-            <img src="images/checkStorage.png" alt="addProduct">
-            <span>Check Storage</span>
+    <div class="icons-container-SL">
+        <div class="icon-container-SL">
+            <img src="images/checkStorage.png" alt="addProduct" class="icon-SL">
+            <span>Storage</span>
         </div>
-        <div class="icon-container">
-            <img src="images/edit.png" alt="edit">
+        <div class="icon-container-SL">
+            <img src="images/edit.png" alt="edit" class="icon-SL">
             <span>Edit</span>
         </div>
-        <div class="icon-container">
-            <img src="images/delete.png" alt="delete">
+        <div class="icon-container-SL">
+            <img src="images/delete.png" alt="delete" class="icon-SL">
             <span>Delete</span>
         </div>
-        <div class="icon-container">
-            <img src="images/save.png" alt="save">
+        <div class="icon-container-SL">
+            <img src="images/save.png" alt="save" class="icon-SL">
             <span>Save</span>
         </div>
     </div>
     <div>
       <div class="input-container"> 
         <div class="changeShoppingListName">
-         <input name="shoppingListName" id="shoppingListName" placeholder="Shopping List Name... ">
-         <button id="addListName" class="addListName">Name the List</button>
+         <input name="shoppingListName" id="shoppingListName" class="inputFields-SL" placeholder="Shopping List Name... " maxlength="20">
+         <button id="addListName" class="addListName">Name</button>
         </div>
       <div class="defineProduct">
-         <div class="input-icons">
-         <input id="productInput" placeholder="Write a product">
-        </div>
-         <input id="quantityInput" placeholder="Quantity">
+         <input id="productInput" class="inputFields-SL" placeholder="Search a product...">
+         <input id="quantityInput" class="inputFields-SL" placeholder="Quantity..." type="number">
          <button id="addProduct">Add</button>
       </div>   
       </div> 
@@ -60,10 +58,10 @@
     </div>
   </div>
   <footer class="footer">
-    <div class="footer-column">
+    <div class="footer-column footer-image">
         <img src="images/logo+text.png" alt="Logo"/>
     </div>
-    <div class="footer-column">
+    <div class="footer-column footer-info">
         <p>About Us</p>
         <p>Career</p>
         <p>Blog</p>
@@ -71,9 +69,9 @@
     </div>
     <div class="footer-column">
         <p>Follow Us in Social</p>
-        <i class="fa-brands fa-instagram fa-2xl" style="color: black;"></i>
-        <i class="fa-brands fa-youtube fa-2xl" style="color: black;"></i>
-        <i class="fa-brands fa-linkedin fa-2xl" style="color: black;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: black;" id="footer-icons"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: black;" id="footer-icons"></i>
+        <i class="fa-brands fa-linkedin fa-2xl" style="color: black;" id="footer-icons"></i>
     </div>
   </footer>
   <script src="project.js"></script>

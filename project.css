@@ -4,11 +4,15 @@ body, html {
     font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 
+* {
+    font-family: Montserrat, sans-serif;
+}
+
 .bodyShoppingList {
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-bottom: 50px;
 }
@@ -22,6 +26,10 @@ body, html {
     padding: 10px 20px;
 }
 
+.img-logo {
+    width: 144px;
+    height: 56px;
+}
 
 body {
     background-color: white;
@@ -32,8 +40,14 @@ body {
     width: 49px;
 }
 
+.intro-SL {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 #shoppingListTag {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 900;
 }
 
@@ -44,11 +58,15 @@ body {
 
 .changeShoppingListName {
     display: flex;
-    flex-direction: row;
 }
 
-.input-container input {
-    height: 30px;
+.inputFields-SL {
+    background-color: #F2F1F1;
+    min-height: 30px;
+    border: none;
+    padding: 0 10px;
+    border-radius: 3px;
+    font-family: Montserrat, sans-serif;
 }
 
 .defineProduct {
@@ -60,12 +78,17 @@ body {
     height: 30px;
     margin-left: auto; 
     flex-basis: fit-content;
+    background-color: #FFF8E6;
+    border: none;
 }
 
 .addListName {
     height: 30px;
     margin-left: auto; 
     flex-basis: fit-content;
+    border: none;
+    border-radius: 3px;
+    background-color: #FFF8E6;
 }
 
 #shoppingListName {
@@ -73,22 +96,23 @@ body {
     min-height: 30px;
     width: 87.8%;
     margin-bottom: 16px;
+    margin-right: 13px;
 }
 
 #productInput {
-   
-    margin-right: auto;
+    flex: 2;
 }
 
 #quantityInput {
     width: 25.5%;
+    margin-left: 13px;
+    margin-right: 13px;
 }
 
 .btn {
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    
 }
 
 #productList {
@@ -102,30 +126,59 @@ body {
     padding: 5px;
 }
 
-.icons-container {
+.icons-container-SL {
     display: grid;
-    gap:10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    margin: 0 auto;
-    max-width: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 13px;
 }
 
-.icon-container {
-
+.icon-container-SL {
     background-color:#FFF8E6;
     border: none;
     border-radius: 0 0 15px 15px;
     font-family: Montserrat, sans-serif;
     font-size: 13px;
-   
+    width: 75px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.icon-SL {
+    width: 35px;
+    height: 35px;
+}
+
+.icons-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 136px 136px;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+    max-width: 500px;
+}
+
+.icon-container {
+    background-color:#FFF8E6;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    width: 100px;
+    height: 136px;
 }
 
 .accountPage {
   background-color: #FFF8E6;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-AP {
+    min-width: 49px;
+    height: 49px;
 }
 
 @media only screen and (max-width: 390px) {
@@ -133,7 +186,7 @@ body {
         width: 20px;
     }
     .icons-container {
-        margin: 0 20px;
+        margin: 22px 5px 15px 5px;
     }
 }
 
@@ -146,6 +199,7 @@ body {
     font-size: 13px;
     margin-top: 5px;
     justify-content: center;
+    text-align: center;
 }
 
 #bodySignUp {
@@ -232,15 +286,15 @@ img {
     background-color: #BFD8AF;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
     color: white;
     margin-top: auto;
+    font-size: 10px;
 }
 
 .footer-column {
     flex: 1;
-    margin: 0 20px;
 }
 
 .footer-column p {
@@ -248,7 +302,18 @@ img {
 }
 
 .footer img {
-    max-width: 100px;
+    width: 103px;
+    height: 40px;
+    padding: 0;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-image {
+    align-items: center;
+    justify-content: center;
 }
 
 .footer i {
@@ -258,6 +323,11 @@ img {
 
 .footer p {
     color: black; 
+}
+
+#footer-icons {
+    height: 20px;
+    width: 20px;
 }
 
 /* Account page*/
@@ -272,14 +342,23 @@ img {
 .profileName {
     display: inline-block;
     text-align: center;
+    margin: 0;
 }
 
 .photoDiv {
     align-self: center;
-    margin-top: 22px;
 }
 
 .photo {
-    max-height: 200px;
-    max-width: 200px;
+    height: 120px;
+    width: 120px;
+    margin: 22px auto;
+    padding: 0;
+}
+
+@media only screen and (max-width: 390px) {
+    .photo {
+        min-height: 120px;
+        min-width: 120px;
+    }
 }
