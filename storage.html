@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage App</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Kavoon">
+    <script src="https://kit.fontawesome.com/9ee7886036.js" crossorigin="anonymous"></script>
+    <title>FoodWasteSolution</title>
+</head>
+<body>
+  <div>
+    <header class="header">
+        <i id="menuIcon" class="fa-solid fa-bars fa-2xl" style="color: black;"></i>
+        <img src="images/logo+text.png" alt="Logo" class="img-logo"/>
+        <i id="userIcon" class="fa-solid fa-user fa-2xl" style="color: black;"></i>
+    </header>
+  </div>  
+  <div class="bodyShoppingList"> 
+    <div class="intro-SL">
+        <img src="images/arrow.png" alt="Arrow" class="icon-arrow"/>
+        <h1 class="h1">My Storage</h1>
+    </div>
+    <div class="icons-container-SL">
+        <div class="icon-container-SL">
+            <img src="images/plus.png" alt="addProduct" class="icon-SL">
+            <span>Add</span>
+        </div>
+        <div class="icon-container-SL">
+            <img src="images/edit.png" alt="edit" class="icon-SL">
+            <span>Edit</span>
+        </div>
+        <div class="icon-container-SL">
+            <img src="images/delete.png" alt="delete" class="icon-SL">
+            <span>Delete</span>
+        </div>
+        <div class="icon-container-SL">
+            <img src="images/save.png" alt="save" class="icon-SL">
+            <span>Save</span>
+        </div>
+    </div>
+    <div>
+      <div class="defineProduct">
+         <input id="productInput" class="inputFields-SL" placeholder="Search a product...">
+      </div>   
+      </div> 
+        <div id="storageList">  
+        </div> <!-- space for the products-->
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-column footer-image">
+        <img src="images/logo+text.png" alt="Logo"/>
+    </div>
+    <div class="footer-column footer-info">
+        <p>About Us</p>
+        <p>Career</p>
+        <p>Blog</p>
+        <p>Contact Us</p>
+    </div>
+    <div class="footer-column">
+        <p>Follow Us in Social</p>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: black;" id="footer-icons"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: black;" id="footer-icons"></i>
+        <i class="fa-brands fa-linkedin fa-2xl" style="color: black;" id="footer-icons"></i>
+    </div>
+  </footer>
+  <script src="storage.js"></script>
+</body>
+</html>
+
