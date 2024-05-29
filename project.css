@@ -1,9 +1,28 @@
+<<<<<<< HEAD
+=======
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    height: 100%; 
+}
+
+* {
+    font-family: Montserrat, sans-serif;
+}
+
+>>>>>>> last variant
 .bodyShoppingList {
     background-color: white;
     display: flex;
     flex-direction: column;
     width: 90%;
+<<<<<<< HEAD
     margin: auto;
+=======
+    margin: 20px auto;
+    margin-bottom: 50px;
+>>>>>>> last variant
 }
 
 .header {
@@ -13,6 +32,7 @@
     flex-direction: row; 
     background: #BFD8AF;
     padding: 10px 20px;
+<<<<<<< HEAD
    
 }
 
@@ -30,11 +50,46 @@
 body {
     background-color: white;
     ;
+=======
+}
+
+.img-logo {
+    width: 144px;
+    height: 56px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 100vh; /* Minimum height to ensure the footer sticks to the bottom */
+}
+
+.content-wrapper {
+    flex: 1; /* This allows the content to take up the remaining space and push the footer down */
+}
+
+.icon-arrow {
+    height: 49px;
+    width: 49px;
+}
+
+.intro-SL {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#shoppingListTag {
+    font-size: 20px;
+    font-weight: 900;
+>>>>>>> last variant
 }
 
 .input-container {
     display: flex;
     flex-direction: column; 
+<<<<<<< HEAD
     justify-content: space-between;
     
 }
@@ -43,6 +98,21 @@ body {
     flex-wrap: nowrap;
     height: 30px;
     
+=======
+}
+
+.changeShoppingListName {
+    display: flex;
+}
+
+.inputFields-SL {
+    background-color: #F2F1F1;
+    min-height: 30px;
+    border: none;
+    padding: 0 10px;
+    border-radius: 3px;
+    font-family: Montserrat, sans-serif;
+>>>>>>> last variant
 }
 
 .defineProduct {
@@ -52,14 +122,32 @@ body {
 
 #addProduct {
     height: 30px;
+<<<<<<< HEAD
     width: 30px;
     flex-basis: fit-content;
     align-items: flex-end;
 } 
+=======
+    margin-left: auto; 
+    flex-basis: fit-content;
+    background-color: #FFF8E6;
+    border: none;
+}
+
+.addListName {
+    height: 30px;
+    margin-left: auto; 
+    flex-basis: fit-content;
+    border: none;
+    border-radius: 3px;
+    background-color: #FFF8E6;
+}
+>>>>>>> last variant
 
 #shoppingListName {
     display: flex;
     min-height: 30px;
+<<<<<<< HEAD
     width: 88%;
     margin-bottom: 16px;
 }
@@ -90,6 +178,103 @@ body {
 .icon-container {
     text-align: center;
     margin: 0 10px;
+=======
+    width: 87.8%;
+    margin-bottom: 16px;
+    margin-right: 13px;
+}
+
+#productInput {
+    flex: 2;
+}
+
+#quantityInput {
+    width: 25.5%;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#productList {
+  margin: 36px 0;
+}
+
+.productItem {
+    background-color: #DBE6D4;
+    margin: 5px 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.icons-container-SL {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 13px;
+}
+
+.icon-container-SL {
+    background-color:#FFF8E6;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    width: 75px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.icon-SL {
+    width: 35px;
+    height: 35px;
+}
+
+.icons-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 136px 136px;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+    max-width: 500px;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.icon-container {
+    background-color:#FFF8E6;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    width: 100px;
+    height: 136px;
+}
+
+.accountPage {
+  background-color: #FFF8E6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-AP {
+    min-width: 49px;
+    height: 49px;
+}
+
+@media only screen and (max-width: 390px) {
+    .icon-container img {
+        width: 20px;
+    }
+ 
+>>>>>>> last variant
 }
 
 .icon-container i {
@@ -98,6 +283,7 @@ body {
 
 .icon-container span {
     display: flex;
+<<<<<<< HEAD
     font-size: 14px;
     margin-top: 5px;
 }
@@ -106,22 +292,46 @@ body {
 /* sign in page */
 
 
+=======
+    font-size: 13px;
+    margin-top: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+>>>>>>> last variant
 #bodySignUp {
     width: 100%;
     height: 100vh;
     margin: 0;
+<<<<<<< HEAD
     background-color: #99BC85;
     font-family: Montserrat, sans-serif;
+=======
+    background-color: #DBE6D4;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+>>>>>>> last variant
 }
 
 label {
     margin: 0.5rem 0;
     font-family: Montserrat, sans-serif;
+<<<<<<< HEAD
   }
 
 .inputSignIn {
     display: block;
     margin: 20px 0;
+=======
+}
+
+.inputSignIn {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+>>>>>>> last variant
     width: -webkit-fill-available;
     min-height: 2.5em;
     font-family: Montserrat, sans-serif;
@@ -160,19 +370,31 @@ label {
     border: none;
     font-family: Montserrat, sans-serif;
     position: relative;
+<<<<<<< HEAD
     float:right;
+=======
+    float: right;
+>>>>>>> last variant
 }
 
 .inputFields {
     width: 75%;
     position: relative;
+<<<<<<< HEAD
     margin: auto;
+=======
+    margin: 20px auto;
+>>>>>>> last variant
 }
 
 .noAccount {   
     display: inline-block; 
     text-align: center; 
+<<<<<<< HEAD
     width: 100%
+=======
+    width: 100%;
+>>>>>>> last variant
 }
 
 .signUp {
@@ -181,4 +403,97 @@ label {
 
 img {
     padding: 15px;
+<<<<<<< HEAD
 }
+=======
+}
+
+/* Footer styles */
+.footer {
+    background-color: #BFD8AF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    margin-top: auto;
+    font-size: 10px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer img {
+    width: 103px;
+    height: 40px;
+    padding: 0;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-image {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer i {
+    margin: 5px;
+    font-size: 24px; 
+}
+
+.footer p {
+    color: black; 
+}
+
+#footer-icons {
+    height: 20px;
+    width: 20px;
+}
+
+/* Account page*/
+ 
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.profileName {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 900;
+}
+
+.photoDiv {
+    align-self: center;
+}
+
+.photo {
+    height: 120px;
+    width: 120px;
+    margin: 22px auto;
+    padding: 0;
+}
+
+@media only screen and (max-width: 390px) {
+    .photo {
+        min-height: 120px;
+        min-width: 120px;
+    }
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+>>>>>>> last variant
