@@ -157,6 +157,9 @@ body {
     grid-column-gap: 30px;
     grid-row-gap: 15px;
     max-width: 500px;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 30px;
 }
 
 .icon-container {
@@ -185,9 +188,7 @@ body {
     .icon-container img {
         width: 20px;
     }
-    .icons-container {
-        margin: 22px 5px 15px 5px;
-    }
+ 
 }
 
 .icon-container i {
@@ -343,6 +344,8 @@ img {
     display: inline-block;
     text-align: center;
     margin: 0;
+    margin-bottom: 24px;
+    font-weight: 900;
 }
 
 .photoDiv {
