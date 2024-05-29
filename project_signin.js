@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!email.includes('@')) {
                 errorMessage = 'Email must contain an "@" sign.';
             } else if (!name.includes(' ')) {
-                errorMessage = 'Name must contain at least one space.';
+                errorMessage = 'Please enter both name and a surname.';
             }
             alert(errorMessage);
         }
@@ -45,3 +45,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
