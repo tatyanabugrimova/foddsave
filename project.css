@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'Roboto', sans-serif;
+    height: 100%; 
 }
 
 * {
@@ -13,7 +14,7 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: auto;
+    margin: 20px auto;
     margin-bottom: 50px;
 }
 
@@ -32,7 +33,14 @@ body, html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    min-height: 100vh; /* Minimum height to ensure the footer sticks to the bottom */
+}
+
+.content-wrapper {
+    flex: 1; /* This allows the content to take up the remaining space and push the footer down */
 }
 
 .icon-arrow {
@@ -220,7 +228,8 @@ label {
 
 .inputSignIn {
     display: block;
-    margin: 20px 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
     width: -webkit-fill-available;
     min-height: 2.5em;
     font-family: Montserrat, sans-serif;
@@ -364,4 +373,9 @@ img {
         min-height: 120px;
         min-width: 120px;
     }
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }

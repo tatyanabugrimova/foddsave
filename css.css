@@ -123,7 +123,8 @@ label {
 
 .inputSignIn {
     display: block;
-    margin: 20px 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
     width: -webkit-fill-available;
     min-height: 2.5em;
     font-family: Montserrat, sans-serif;

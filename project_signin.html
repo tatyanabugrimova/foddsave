@@ -17,9 +17,11 @@
         <i id="userIcon" class="fa-solid fa-user fa-2xl" style="color: black;"></i>
     </header>
     <div class="inputFields">
-        <label><input placeholder="Name" class="inputSignIn" type="text"/></label>
-        <label><input placeholder="E-mail" required class="inputSignIn" type="email"></label>
-        <label><input placeholder="Password" required class="inputSignIn" type="password"></label>
+        <label>Name:<input id="name" placeholder="Name" class="inputSignIn" type="text" required/></label>
+        <label>E-mail:<input id="email" placeholder="E-mail" required class="inputSignIn" type="email">
+            <span id="emailError" class="error-message"></span>
+        </label>
+        <label>Password:<input id="password" placeholder="Password" required class="inputSignIn" type="password"></label>
         <div>
             <label class="rememberMeLabel"><input id="rememberMe" type="checkbox">Remember me</label>
         </div> 
@@ -45,6 +47,6 @@
         </div>
     </footer>
 
-    <script src="project_signin.js"></script>
+    <script src="project_signin.js" src="project.js"></script>
 </body>
 </html>
