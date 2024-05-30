@@ -2,7 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'Roboto', sans-serif;
-    height: 100%; 
 }
 
 * {
@@ -15,7 +14,6 @@ body, html {
     flex-direction: column;
     width: 90%;
     margin: 20px auto;
-    margin-bottom: 50px;
 }
 
 .header {
@@ -74,7 +72,6 @@ body {
     border: none;
     padding: 0 10px;
     border-radius: 3px;
-    font-family: Montserrat, sans-serif;
 }
 
 .defineProduct {
@@ -164,20 +161,8 @@ body {
     grid-template-rows: 136px 136px;
     grid-column-gap: 30px;
     grid-row-gap: 15px;
-    max-width: 500px;
     margin: auto;
     width: fit-content;
-    margin-bottom: 30px;
-}
-
-.icon-container {
-    background-color:#FFF8E6;
-    border: none;
-    border-radius: 0 0 15px 15px;
-    font-family: Montserrat, sans-serif;
-    font-size: 13px;
-    width: 100px;
-    height: 136px;
 }
 
 .accountPage {
@@ -221,13 +206,7 @@ body {
     flex-direction: column;
 }
 
-label {
-    margin: 0.5rem 0;
-    font-family: Montserrat, sans-serif;
-}
-
 .inputSignIn {
-    display: block;
     margin-top: 5px;
     margin-bottom: 15px;
     width: -webkit-fill-available;
@@ -259,21 +238,16 @@ label {
 .submitButton {
     color: black;
     background-color: #F4C64E;
-    text-align: center;
     width: 50%;
     padding: 10px;
-    display: flow;
     margin: 20px 0;
     border-radius: 10px;
     border: none;
-    font-family: Montserrat, sans-serif;
-    position: relative;
     float: right;
 }
 
 .inputFields {
     width: 75%;
-    position: relative;
     margin: 20px auto;
 }
 
@@ -295,7 +269,6 @@ img {
 .footer {
     background-color: #BFD8AF;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
     color: white;
@@ -319,11 +292,6 @@ img {
 
 .footer-info {
     text-align: center;
-}
-
-.footer-image {
-    align-items: center;
-    justify-content: center;
 }
 
 .footer i {
