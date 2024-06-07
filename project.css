@@ -25,6 +25,12 @@ body, html {
     padding: 10px 20px;
 }
 
+#userIcon {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
 .img-logo {
     width: 144px;
     height: 56px;
