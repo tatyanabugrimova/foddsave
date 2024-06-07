@@ -136,6 +136,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 13px;
+    max-width: fit-content;
+    align-self: center;
 }
 
 .icon-container-SL {
@@ -347,3 +349,11 @@ img {
     background-color: #ccc;
     cursor: not-allowed;
 }
+
+/* Remove text decoration for links with the 'no-decoration' class */
+.no-decoration {
+    text-decoration: none;
+    color: inherit; /* Ensure the link takes the color of its parent element */
+}
+
+
