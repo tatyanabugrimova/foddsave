@@ -1,0 +1,394 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+* {
+    font-family: Montserrat, sans-serif;
+}
+
+.bodyShoppingList {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; 
+    background: #BFD8AF;
+    padding: 10px 20px;
+}
+
+#userIcon {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.img-logo {
+    width: 144px;
+    height: 56px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 100vh; /* Minimum height to ensure the footer sticks to the bottom */
+}
+
+.content-wrapper {
+    flex: 1; /* This allows the content to take up the remaining space and push the footer down */
+}
+
+.icon-arrow {
+    height: 49px;
+    width: 49px;
+}
+
+.intro-SL {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#shoppingListTag {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.changeShoppingListName {
+    display: flex;
+}
+
+.inputFields-SL {
+    background-color: #F2F1F1;
+    min-height: 30px;
+    border: none;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.defineProduct {
+    display: flex;
+    flex-direction: row;
+}
+
+#addProduct {
+    height: 30px;
+    margin-left: auto; 
+    flex-basis: fit-content;
+    background-color: #FFF8E6;
+    border: none;
+}
+
+.addListName {
+    height: 30px;
+    margin-left: auto; 
+    flex-basis: fit-content;
+    border: none;
+    border-radius: 3px;
+    background-color: #FFF8E6;
+}
+
+#shoppingListName {
+    display: flex;
+    min-height: 30px;
+    width: 87.8%;
+    margin-bottom: 16px;
+    margin-right: 13px;
+}
+
+#productInput {
+    flex: 2;
+}
+
+#quantityInput {
+    width: 25.5%;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#productList {
+  margin: 36px 0;
+}
+
+.productItem {
+    background-color: #DBE6D4;
+    margin: 5px 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.icons-container-SL {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 13px;
+    max-width: fit-content;
+    align-self: center;
+}
+
+.icon-container-SL {
+    background-color:#FFF8E6;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    width: 75px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.icon-SL {
+    width: 35px;
+    height: 35px;
+}
+
+.icons-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 136px 136px;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+    margin: auto;
+    width: fit-content;
+}
+
+.accountPage {
+  background-color: #FFF8E6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 15px 15px;
+}
+
+.icon-AP {
+    min-width: 49px;
+    height: 49px;
+}
+
+@media only screen and (max-width: 390px) {
+    .icon-container img {
+        width: 20px;
+    }
+ 
+}
+
+.icon-container i {
+    font-size: 24px;
+}
+
+.icon-container span {
+    display: flex;
+    font-size: 13px;
+    margin-top: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+#bodySignUp {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #DBE6D4;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSignIn {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: -webkit-fill-available;
+    min-height: 2.5em;
+    font-family: Montserrat, sans-serif;
+    border-radius: 3px;
+    border: 0;
+    padding: 0 10px;
+}
+
+.signInText {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+    margin: 30px;
+}
+
+.flex-item {
+    align-content: flex-end;
+}
+
+.submitButton {
+    color: black;
+    background-color: #F4C64E;
+    width: 50%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+    float: right;
+}
+
+.inputFields {
+    width: 75%;
+    margin: 20px auto;
+}
+
+.noAccount {   
+    display: inline-block; 
+    text-align: center; 
+    width: 100%;
+}
+
+.signUp {
+    text-decoration: underline;
+}
+
+img {
+    padding: 15px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #BFD8AF;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    margin-top: auto;
+    font-size: 10px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer img {
+    width: 103px;
+    padding: 0;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer i {
+    margin: 5px;
+    font-size: 24px; 
+}
+
+.footer p {
+    color: black; 
+}
+
+#footer-icons {
+    height: 20px;
+    width: 20px;
+}
+
+/* Account page*/
+ 
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.profileName {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.photoDiv {
+    align-self: center;
+}
+
+.photo {
+    height: 120px;
+    width: 120px;
+    margin: 22px auto;
+    padding: 0;
+}
+
+@media only screen and (max-width: 390px) {
+    .photo {
+        min-height: 120px;
+        min-width: 120px;
+    }
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Remove text decoration for links with the 'no-decoration' class */
+.no-decoration {
+    text-decoration: none;
+    color: inherit; /* Ensure the link takes the color of its parent element */
+}
+
+.errorPhoto {
+    width: 350px;
+}
+
+.errorText {
+    text-align: center;
+    display: inline-block;
+}
+
+.error {
+    margin: 0 auto;
+}
+
+/* coming up */
+
+.bodyCU {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Center the content */
+.error {
+    flex: 1; /* Allow the .error div to take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
