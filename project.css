@@ -362,4 +362,33 @@ img {
     color: inherit; /* Ensure the link takes the color of its parent element */
 }
 
+.errorPhoto {
+    width: 350px;
+}
 
+.errorText {
+    text-align: center;
+    display: inline-block;
+}
+
+.error {
+    margin: 0 auto;
+}
+
+/* coming up */
+
+.bodyCU {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Center the content */
+.error {
+    flex: 1; /* Allow the .error div to take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
