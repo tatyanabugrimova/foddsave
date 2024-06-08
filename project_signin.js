@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Check if all fields are filled out, if the email contains an '@' sign,
         // and if the name contains at least one space
         if (name !== '' && email !== '' && password !== '' && email.includes('@') && name.includes(' ')) {
+            // Save the name in Local Storage
+            localStorage.setItem('userName', name);
+            // Redirect to another page (e.g., account_page.html)
             window.location.href = "account_page.html";
         } else {
             // Prevent form submission

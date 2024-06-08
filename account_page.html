@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,80 +8,107 @@
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Kavoon">
     <script src="https://kit.fontawesome.com/9ee7886036.js" crossorigin="anonymous"></script>
+    <style>
+        .profile {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #userName {
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="content-wrapper">
-    <header class="header">
-        <img src="images/3bar.png" id="userIcon"/>
-        <img src="images/logo+text.png" alt="Logo" class="img-logo"/>
-        <a href="project_signin.html">
-        <img src="images/account.png" id="userIcon"/>
-        </a>
-    </header>
-    <div class="profile">
-        <div class="photoDiv"><img src="images/photo.png" alt="photo" class="photo"/></div>
-        <div class="profileName">Anna Jackson</div>        
-    </div>
+    <div class="content-wrapper">
+        <header class="header">
+            <img src="images/3bar.png" class="userIcon" />
+            <img src="images/logo+text.png" alt="Logo" class="img-logo" />
+            <a href="project_signin.html">
+                <img src="images/account.png" class="userIcon" />
+            </a>
+        </header>
 
-    <div class="icons-container">
-        <div class="icon-container accountPage">
-            <img id="createShoppingListImage" src="images/createShoppingList.png" alt="createShoppingList" class="icon-AP"/>
-            <span>Create Shopping List</span>
+        <div class="profile">
+            <div class="photoDiv"><img src="images/photo.png" alt="photo" class="photo" /></div>
+            <h1><span id="userName">Anna Jackson</span></h1>
         </div>
-        <div class="icon-container accountPage">
-            <img src="images/myShoppingList.png" alt="myShoppingList" class="icon-AP"/>
-            <span>My Shopping List</span>
-        </div>
-        <div class="icon-container accountPage">
-            <a href="storage.html" class="no-decoration">
-                <img src="images/storage.png" alt="mystorage" class="icon-AP"/>
-                <span>My Storage</span>
-            </a>
-        </div>
-        <div class="icon-container accountPage">
-            <a href="comingUp.html" class="no-decoration">
-                <img src="images/setting.png" alt="Settings" class="icon-AP"/>
-                <span>Settings</span>
-            </a>
-        </div>
-        <div class="icon-container accountPage">
-            <a href="comingUp.html" class="no-decoration">
-                <img src="images/stats.png" alt="Statistics" class="icon-AP"/>
-                <span>Statistics</span>
-            </a>
-        </div>
-        <div class="icon-container accountPage">
-            <a href="comingUp.html" class="no-decoration">
-                <img src="images/savedAP.png" alt="saved" class="icon-AP"/>
-                <span>Saved</span>
-            </a>
-        </div>
-    </div>
 
-</div> <!-- Close content-wrapper -->
-<footer class="footer">
-    <div class="footer-column">
-        <img src="images/logo+text.png" alt="Logo"/>
-    </div>
-    <div class="footer-column footer-info">
-        <a href="comingUp.html" class="no-decoration">
-            <p>About Us</p>
-        </a>
-        <a href="comingUp.html" class="no-decoration">
-            <p>Career</p>
-        </a>
-        <a href="comingUp.html" class="no-decoration">
-            <p>Blog</p>
-        </a>
-        <a href="comingUp.html" class="no-decoration">
-            <p>Contact Us</p>
-        </a>
-    </div>
-    <div class="footer-column">
-        <p>Follow Us on Social Media</p>
-        <img src="images/SoMe.png"/>
-    </div>
-</footer>
-<script src="account.js"></script>
+        <div class="icons-container">
+            <div class="icon-container accountPage">
+                <img id="createShoppingListImage" src="images/createShoppingList.png" alt="createShoppingList" class="icon-AP" />
+                <span>Create Shopping List</span>
+            </div>
+            <div class="icon-container accountPage">
+                <img src="images/myShoppingList.png" alt="myShoppingList" class="icon-AP" />
+                <span>My Shopping List</span>
+            </div>
+            <div class="icon-container accountPage">
+                <a href="storage.html" class="no-decoration">
+                    <img src="images/storage.png" alt="mystorage" class="icon-AP" />
+                    <span>My Storage</span>
+                </a>
+            </div>
+            <div class="icon-container accountPage">
+                <a href="comingUp.html" class="no-decoration">
+                    <img src="images/setting.png" alt="Settings" class="icon-AP" />
+                    <span>Settings</span>
+                </a>
+            </div>
+            <div class="icon-container accountPage">
+                <a href="comingUp.html" class="no-decoration">
+                    <img src="images/stats.png" alt="Statistics" class="icon-AP" />
+                    <span>Statistics</span>
+                </a>
+            </div>
+            <div class="icon-container accountPage">
+                <a href="comingUp.html" class="no-decoration">
+                    <img src="images/savedAP.png" alt="saved" class="icon-AP" />
+                    <span>Saved</span>
+                </a>
+            </div>
+        </div>
+    </div> <!-- Close content-wrapper -->
+
+    <footer class="footer">
+        <div class="footer-column">
+            <img src="images/logo+text.png" alt="Logo" />
+        </div>
+        <div class="footer-column footer-info">
+            <a href="comingUp.html" class="no-decoration">
+                <p>About Us</p>
+            </a>
+            <a href="comingUp.html" class="no-decoration">
+                <p>Career</p>
+            </a>
+            <a href="comingUp.html" class="no-decoration">
+                <p>Blog</p>
+            </a>
+            <a href="comingUp.html" class="no-decoration">
+                <p>Contact Us</p>
+            </a>
+        </div>
+        <div class="footer-column">
+            <p>Follow Us on Social Media</p>
+            <img src="images/SoMe.png" />
+        </div>
+    </footer>
+    <script src="account.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Получаем имя из Local Storage
+            var name = localStorage.getItem('userName');
+
+            // Проверяем, есть ли сохраненное имя
+            if (name) {
+                document.getElementById('userName').textContent = name;
+            }
+        });
+    </script>
 </body>
+
 </html>
