@@ -25,7 +25,7 @@ function onPageLoaded() {
     // Create a new product item div
     const productItem = document.createElement('div');
     productItem.className = 'productItem';
-   
+
 
     // Create a checkbox input element
     const checkbox = document.createElement('input');
@@ -56,4 +56,3 @@ function onPageLoaded() {
 
 // Execute the onPageLoaded function when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', onPageLoaded);
-

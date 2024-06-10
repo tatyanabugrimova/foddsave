@@ -3,16 +3,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
     const emailError = document.getElementById('emailError');
-
     submitButton.addEventListener("click", function (event) {
         // Get the values from the input fields
         const name = nameInput.value.trim();
         const email = emailInput.value.trim();
         const password = document.getElementById('password').value.trim();
-
         // Check if all fields are filled out, if the email contains an '@' sign,
         // and if the name contains at least one space
         if (name !== '' && email !== '' && password !== '' && email.includes('@') && name.includes(' ')) {
+            // Save the name in Local Storage
+            localStorage.setItem('userName', name);
+            // Redirect to another page (e.g., account_page.html)
             window.location.href = "account_page.html";
         } else {
             // Prevent form submission
@@ -29,14 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
             alert(errorMessage);
         }
     });
-
     // Add input event listener to clear the error message when the user starts typing
     nameInput.addEventListener('input', function () {
         if (nameInput.value.includes(' ')) {
             nameInput.style.borderColor = '';
         }
     });
-
     // Add input event listener to clear the error message when the user starts typing
     emailInput.addEventListener('input', function () {
         if (emailInput.value.includes('@')) {
@@ -45,4 +44,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
