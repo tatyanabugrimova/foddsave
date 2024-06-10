@@ -322,7 +322,14 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
 
+#userName {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .profileName {

@@ -8,18 +8,6 @@
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Kavoon">
     <script src="https://kit.fontawesome.com/9ee7886036.js" crossorigin="anonymous"></script>
-    <style>
-        .profile {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        #userName {
-            font-size: 24px;
-            font-weight: bold;
-            display: inline-block;
-        }
-    </style>
 </head>
 
 <body>
@@ -100,17 +88,6 @@
         </div>
     </footer>
     <script src="account.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // check name from Local Storage
-            var name = localStorage.getItem('userName');
-
-            // checking saving name
-            if (name) {
-                document.getElementById('userName').textContent = name;
-            }
-        });
-    </script>
 </body>
 
 </html>

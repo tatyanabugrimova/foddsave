@@ -11,10 +11,10 @@ const createShoppingListImage = document.getElementById("createShoppingListImage
 createShoppingListImage.addEventListener("click", redirectToProjectPage);
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Получаем имя из Local Storage
+    // check name from Local Storage
     var name = localStorage.getItem('userName');
 
-    // Проверяем, есть ли сохраненное имя
+    // checking saving name
     if (name) {
         document.getElementById('userName').textContent = name;
     }
